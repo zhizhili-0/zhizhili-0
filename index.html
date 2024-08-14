@@ -1,65 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lizhizhi的个人主页</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a3c9f1, #e3f2fd);
+            color: #333;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+        .card p {
+            margin: 0 1rem 1rem;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .placeholder {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: rgba(240, 240, 240, 0.8);
+            border: 2px dashed #ccc;
+        }
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Welcome to lizhizhi's Personal Website</h1>
-            <p>Test content, to be filled in later.</p>
-        </div>
+        <h1>lizhizhi的个人主页</h1>
+        <p class="subtitle">欢迎来到我的主页！</p>
     </header>
 
-    <section class="about">
-        <div class="content-container">
-            <h2>About Me</h2>
-            <p>Test content, to be filled in later.</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="your-image1.jpg" alt="作品1">
+            <h3>我的一些作品</h3>
+            <p>测试待填写 - 作品的描述或链接到详细页面。</p>
         </div>
-    </section>
+        <div class="card">
+            <img src="your-image2.jpg" alt="作品2">
+            <h3>喜欢的一些内容</h3>
+            <p>测试待填写 - 作品的描述或链接到详细页面。</p>
+        </div>
+        <div class="card">
+            <img src="your-image3.jpg" alt="个人思考">
+            <h3>美丽的图片</h3>
+            <p>测试待填写 - 个人思考的简述或链接到详细页面。</p>
+        </div>
+    </div>
 
-    <section class="portfolio">
-        <div class="content-container">
-            <h2>My Works</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Work 1</h3>
-                    <p>Test content, to be filled in later.</p>
-                    <a href="work1.html" class="button">View Details</a>
-                </div>
-                <div class="card">
-                    <h3>Work 2</h3>
-                    <p>Test content, to be filled in later.</p>
-                    <a href="work2.html" class="button">View Details</a>
-                </div>
-                <div class="card">
-                    <h3>Work 3</h3>
-                    <p>Test content, to be filled in later.</p>
-                    <a href="work3.html" class="button">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="thoughts">
-        <div class="content-container">
-            <h2>My Thoughts</h2>
-            <p>Test content, to be filled in later.</p>
-        </div>
-    </section>
-
-    <section class="illustrations">
-        <div class="content-container">
-            <h2>Illustrations</h2>
-            <div class="placeholder">[Dynamic Element Placeholder]</div>
-        </div>
-    </section>
+    <div class="placeholder">
+        这里预留插画和动态元素的位置
+    </div>
 
     <footer>
-        <p>&copy; 2024 lizhizhi. All rights reserved.</p>
+        &copy; 2024 lizhizhi - 测试待填写 - 个人主页
     </footer>
 </body>
 </html>
